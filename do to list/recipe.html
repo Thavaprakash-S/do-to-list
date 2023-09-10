@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>FOOD SHOP 🛒</header>
+    <main>
+        <h3>CHOOSE THE FOOD 🍔</h3>
+        <div class="input-container">
+            <input type="text" placeholder="Your Choice Any Food Add . . . " class="input-food" id="input-food">
+            <button class="input-button" id="input-btn">Save</button>
+        </div>
+        <ul id="food-container" class="food-container">
+            <li class="food-item">
+                <div>
+                    sampar
+                </div>
+                <div onclick="removeItem(event)"><i class="fa-solid fa-xmark"></i></div>
+            </li>
+
+            <li class="food-item">
+                <div>
+                    rasam
+                </div>
+                <div onclick="removeItem(event)"><i class="fa-solid fa-xmark"></i></div>
+            </li>
+            <li class="food-item">
+                <div>
+                    curd
+                </div>
+                <div onclick="removeItem(event)"><i class="fa-solid fa-xmark"></i></div>
+            </li>
+        </ul>
+    </main>
+    <script src="./recipe.js"></script>
+</body>
+
+</html>
